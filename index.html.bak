@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Prata Poker</title>
+  <link rel="stylesheet" href="css/reset.css">
+
+</head>
+<body>
+<!-- Desenvolvedor Eliel -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Prata Poker</title>
+
+</head>
+<body>
+    
+  
+    
+<div class="app_wrapper">
+    <header>
+        Prata Poker - Torneio de Quarta
+    </header>
+    <div class="content cf">
+        <div class="nav cf">
+            <div class="nav_options navBtns">Options</div>
+            <div class="nav_timer navBtns">Timer</div>
+        </div>
+<audio id="alerta" src="alerta.mp3" preload="auto"></audio>
+<audio id="alerta1" src="alerta1.mp3" preload="auto"></audio>
+<audio id="cinco" src="5.mp3" preload="auto"></audio>
+        <div class="options phase">
+            <h1>Time:</h1>
+            <form>
+                <label>Seconds</label><input type="number" min="0" max="59"  class="input_sec">
+                <label>Minutes</label><input type="number" min="0" max="59"  class="input_min">
+                <label>Hours</label><input type="number" min="0" max="12"  class="input_hour">
+                <button class="save_time"><span class="fontawesome-check"></span></button>
+            </form>		
+        </div>
+	<div class="jackpot">JackPot <span> 22,00 <span></div>
+        <div class="timer phase">
+            <h1><b>Nível: <span class="round">1</span></b></h1>
+            <div class="time">
+                0:17:0
+            </div>
+            <div class="blinds">
+                50 / 100
+            </div>
+            <button class="start_pause"><span class="fontawesome-play"></span></button>
+            <button class="last_blind"><span class="fontawesome-double-angle-left"></span></button>
+            <button class="reset_time"><span class="fontawesome-refresh"></span></button>
+            <button class="next_blind"><span class="fontawesome-double-angle-right"></span></button>
+        </div>
+    </div>
+</div>
+    
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script src="app_interface.js"></script>
+<script src="app_timer.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

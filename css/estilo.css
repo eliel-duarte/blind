@@ -1,0 +1,69 @@
+body{
+	background: #009968;
+}
+
+#tudo{
+	
+	position: relative;
+	float: left;
+	width: 100%;
+	color: white;
+	font-family: arial;
+	
+}
+
+#cabecalho, #corpo{
+	position: relative;
+	float: left;
+	width: 100%;
+	border: 1px solid white;	
+}
+
+#esquerda{
+	position: relative;
+	float: left;
+	width: 15%;
+}
+#meio{
+	position: relative;
+	float: left;
+	width: 70%;	
+	
+}
+#direita{
+	position: relative;
+	float: left;
+	width: 15%;	
+}
+
+#cronometro{
+	font-size: 200px;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid white;	
+}
+
+#quadradinho{
+	background-color: #005639;
+	border: 1px solid white;
+}
+
+#informacoes{
+	border: 1px solid white;	
+}
+
+.media_centralizada{
+	font-size: 25px;
+	text-align: center;
+	padding: 5px;
+}
+.pequena_centralizada{
+	font-size: 18px;
+	text-align: center;
+	padding: 5px;
+}
+.grande_centralizada{
+	font-size: 35px;
+	text-align: center;
+	padding: 5px;
+}
