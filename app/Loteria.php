@@ -15,7 +15,7 @@ class Loteria{
      * @param string
      * @return array
      */
-    public static function consultarResultado($resultado){
+    public static function consultarResultado($loteria){
 
         echo "<pre>";
         print_r($loteria);
