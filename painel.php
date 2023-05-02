@@ -7,9 +7,9 @@
     echo "<br />";
     //echo $Tempo->subtrairTempo( "1986/09/25", "2023/09/25" )
 
-    $entrada = strtotime( '2009-05-25 23:30:15' );
-    $saida   = strtotime( '2010-05-26 11:15:20' );
-    $diferenca = $saida - $entrada;
+    $inicioTorneio = strtotime( '2023-05-02 14:00:00' );
+    $agora = strtotime( date() );
+    $diferenca = $agora - $inicioTorneio;
     
     echo date('H:i:s', $diferenca);
 
