@@ -2,7 +2,7 @@
 
     class Tempo
     {
-        function tempoPercorrido( $agora, $inicio )
+        function tempoPercorrido( $agora = date("Y-m-d H:i:s"), $inicio )
         {            
             // Converter $agora para o formato Unix timestamp
             $tpAgora = strtotime($agora);
