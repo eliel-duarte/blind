@@ -1,5 +1,7 @@
 <?php
 
-    echo date('Y-m-d H:i:s');
+    require_once("config.php");
+
+    echo date('H:i:s');
 
 ?>
