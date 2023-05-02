@@ -32,6 +32,6 @@ $tempoPercorrido = $agora - $timestampinicio;
 // Mostra os resultados
 echo $datetime1 . '<br>';
 echo $datetime2 . '<br>';
-echo $tempoPercorrido . '<br>';
+echo gmdate("H:i:s", $tempoPercorrido) . '<br>';
 
 ?>
