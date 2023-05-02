@@ -4,6 +4,7 @@
 
     echo date('H:i:s');
 
-    echo $Tempo->testeTempo();
+    echo "<br />";
+    echo $Tempo->subtrairTempo( "1986/09/25", "2023/09/25" )
 
 ?>

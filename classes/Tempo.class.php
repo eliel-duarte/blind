@@ -21,9 +21,6 @@
 
         } 
         
-        function testeTempo(){
-            echo "tempo correto";
-        }
     }
 
     // instancia a classe
