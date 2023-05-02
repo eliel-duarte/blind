@@ -4,6 +4,6 @@
 
     echo date('H:i:s');
 
-    echo Tempo->testeTempo();
+    echo $Tempo->testeTempo();
 
 ?>

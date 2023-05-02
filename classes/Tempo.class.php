@@ -25,5 +25,8 @@
             echo "tempo correto";
         }
     }
+
+    // instancia a classe
+    $Tempo = new Tempo;
     
 ?>
