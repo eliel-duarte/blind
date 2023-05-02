@@ -22,8 +22,16 @@ $novaDataHora= $timestamp - $tempo;
 // Data e hora apos a subtracao
 $datetime2 = date("Y-m-d H:i:s", $novaDataHora);
 
+// tempo percorrido
+$datainicio = date("2023-05-02 14:00:00");
+$timestampinicio = strtotime($datainicio);
+$agora = $timestamp;
+$tempoPercorrido = $agora - $timestampinicio;
+
+
 // Mostra os resultados
 echo $datetime1 . '<br>';
 echo $datetime2 . '<br>';
+echo $tempoPercorrido . '<br>';
 
 ?>
