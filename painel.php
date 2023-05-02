@@ -11,5 +11,4 @@
     // Tempo percorrido
     echo $Tempo->tempoPercorrido( $agora , $inicioTorneio );
 
-
 ?>
