@@ -2,19 +2,28 @@
 
     require_once("config.php");
 
-    echo date('d/m/Y H:i:s');
+// Data e hora atual
+$datetime1 = date("Y-m-d H:i:s");
 
-    echo "<br />";
-    //echo $Tempo->subtrairTempo( "1986/09/25", "2023/09/25" )
+// Converter $datetime1 para o formato Unix timestamp
+$timestamp = strtotime($datetime1);
 
-    
+// Tempo a ser subtraido - 01:30 horas
+$horas = 1;      // cada hora corresponde a 3600 segundos
+$minutos = 30;   // cada minuto corresponde a 60 segundos
+$segundos = 0;
 
-    $inicioTorneio = strtotime( '2023/05/02 14:00:00' );
-    $agora = strtotime( date('d/m/Y H:i:s') );
-    $diferenca = $inicioTorneio - $agora;
-    
-    echo $inicioTorneio." - ".$agora." = ".$diferenca;
-    echo "<br />";
-    echo $Tempo->horaCheia($diferenca);
+// Transforma o tempo a ser subtraido em segundos
+$tempo = ($horas * 3600) + ($minutos * 60) + $segundos;
+
+// Subtrair $tempo de $datetime1
+$novaDataHora= $timestamp - $tempo;
+
+// Data e hora apos a subtracao
+$datetime2 = date("Y-m-d H:i:s", $novaDataHora);
+
+// Mostra os resultados
+echo $datetime1 . '<br>';
+echo $datetime2 . '<br>';
 
 ?>
