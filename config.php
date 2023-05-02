@@ -1,5 +1,5 @@
 <?php
 
-    require_once("Tempo.class.php");
+    require_once("classes/Tempo.class.php");
 
 ?>
