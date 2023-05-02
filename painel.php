@@ -11,7 +11,7 @@
 
     $inicioTorneio = strtotime( '2023/05/02 14:00:00' );
     $agora = strtotime( date('d/m/Y H:i:s') );
-    $diferenca = $inicioTorneio - $agora;
+    $diferenca = $agora - $inicioTorneio;
     
     echo date('H:i:s', $diferenca);
 
