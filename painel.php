@@ -13,7 +13,7 @@
     $agora = strtotime( date('d/m/Y H:i:s') );
     $diferenca = $inicioTorneio - $agora;
     
-    echo $diferenca;
+    echo $inicioTorneio." - ".$agora." = ".$diferenca;
     echo "<br />";
     echo $Tempo->horaCheia($diferenca);
 
