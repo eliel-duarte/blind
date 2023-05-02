@@ -2,48 +2,21 @@
 
     class Tempo
     {
-        /**
-         * @param $maior - tempo maior
-         * @param $menor - tempo menor
-         * @param $formato  - Formato esperado de saida
-         */
-        function subtrairTempo( $maior, $menor, $formato = '%a' ) {
+        function tempoPercorrido( $agora = date("Y-m-d H:i:s"), $inicio )
+        {            
+            // Converter $agora para o formato Unix timestamp
+            $tpAgora = strtotime($agora);
+            
+            // Converter $inicio para o formato Unix timestamp
+            $tpInicio = strtotime($inicio);
 
-            $menor     =   new DateTime( $menor );
+            // Subtrai o inicio do agora
+            $tempoPercorrido = $tpAgora - $tpInicio;
 
-            $maior     =   new DateTime( $maior );
-
-            //Calcula a diferença entre as datas
-            $diferença   =   $menor->diff($maior, true);   
-
-            //Formata no padrão esperado e retorna
-            return $diferença->format( $formato );
+            // Retorna no fomato H:m:s
+            return gmdate("H:i:s", $tempoPercorrido);
 
         }
-
-        function horaCheia($segundos) {
-            $negative = $segundos < 0; //Verifica se é um valor negativo
-        
-            if ($negative) {
-                $segundos = -$segundos; //Converte o negativo para positivo para poder fazer os calculos
-            }
-        
-            $hours = $segundos / 3600;
-        
-            $mins = ($segundos - ($hours * 3600)) / 60;
-        
-            //Pega o valor após o ponto flutuante
-            $f = fmod($hours, 1);
-        
-            //Adiciona minutos se $segundos for quebrado
-            if ($f > 0) $mins += 60 * $f;
-        
-            $secs = $segundos % 60;
-        
-            $sign = $negative ? '-' : ''; //Adiciona o sinal de negativo se necessário
-        
-            return $sign . sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
-        }        
 
     }
 
