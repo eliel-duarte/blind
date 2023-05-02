@@ -8,10 +8,9 @@
     // Data e hora atual
     echo $agora = date("Y-m-d H:i:s");
 
-    echo "v1<br />";
-
     // Tempo percorrido
-    echo $Tempo->tempoPercorrido( $inicioTorneio );
+    echo $Tempo->tempoPercorrido( $agora , $inicioTorneio );
+
 
 
 ?>
