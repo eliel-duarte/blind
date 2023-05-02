@@ -6,7 +6,7 @@
     $inicioTorneio = date("2023-05-02 14:00:00");
     
     // Data e hora atual
-    $agora = date("Y-m-d H:i:s");
+    echo $agora = date("Y-m-d H:i:s");
 
     // Tempo percorrido
     $Tempo->tempoPercorrido( $agora , $inicioTorneio );
