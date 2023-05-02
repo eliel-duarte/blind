@@ -7,6 +7,8 @@
     echo "<br />";
     //echo $Tempo->subtrairTempo( "1986/09/25", "2023/09/25" )
 
+    date_default_timezone_set ("America/Sao_Paulo");
+
     $inicioTorneio = strtotime( '2023-05-02 14:00:00' );
     $agora = strtotime( date('d/m/Y H:i:s') );
     $diferenca = $agora - $inicioTorneio;
