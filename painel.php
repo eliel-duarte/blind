@@ -11,6 +11,6 @@
     $saida   = strtotime( '2010-05-26 11:15:20' );
     $diferenca = $saida - $entrada;
     
-    printf( '%d:%d', $diferenca/3600, $diferenca/60%60 );    
+    echo date('d/m/Y H:i:s', $diferenca);
 
 ?>
