@@ -10,7 +10,7 @@
     echo "Agora: ".$agora."<br>";
 
     // Tempo percorrido
-    echo "Percorrido: ".$Tempo->tempoPercorrido( $agora , $inicioTorneio )."<br>";
+    echo "Percorrido: ".gmdate("H:i:s", $Tempo->tempoPercorrido( $agora , $inicioTorneio ))."<br>";
     
     // tempo do blind restante
     echo $Tempo->tempoBlindRestante("00:15:00");

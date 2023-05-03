@@ -15,7 +15,7 @@
             $tempoPercorrido = $tpAgora - $tpInicio;
 
             // Retorna no fomato H:m:s
-            return gmdate("H:i:s", $tempoPercorrido);
+            return $tempoPercorrido;
 
         }
 
