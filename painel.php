@@ -21,7 +21,7 @@
     
     // tempo do blind restante
     $tempoBlind = "00:15:00"; 
-    echo "Restante Blind: ".gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio ))."<br>";
+    echo "Restante Blind: ".gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio, $pausa ))."<br>";
 
     // nível atual de blinds
     echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio)."<br>";   

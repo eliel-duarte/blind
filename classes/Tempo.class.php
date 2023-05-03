@@ -38,7 +38,7 @@
         }
 
         // funcção que calcula o tempo restante do blind
-        function tempoBlindRestante( $tempoBlind, $agora, $inicio )
+        function tempoBlindRestante( $tempoBlind, $agora, $inicio, $pausa )
         {
             // divide o tempo em array
             $tempo = explode(":", $tempoBlind);
