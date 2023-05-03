@@ -47,7 +47,7 @@
             $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
             
             // chama a função que calcula o tempo percorrido do torneio
-            $tempoPercorrido = $this->tempoDeJogo( $agora, $inicio );
+            $tempoPercorrido = $this->tempoDeJogo( $agora, $inicio, $pausa );
 
             // retira o resto do tempo percorrido
             $tempoRestante = $tpTempo - ($tempoPercorrido % $tpTempo);
