@@ -11,7 +11,7 @@
     // Tempo percorrido
     echo "Percorrido: ".$Tempo->tempoPercorrido( $agora , $inicioTorneio )."<br>";
     
-    $tempoBlind = time("0:15:00");
+    $tempoBlind = date("0:15:00");
     echo $tpTempoBlind = strtotime($tempoBlind);
     //$tpAgora = strtotime($agora);
     //$tpInicio = strtotime($inicioTorneio);
