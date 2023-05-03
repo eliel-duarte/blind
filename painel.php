@@ -3,7 +3,7 @@
     require_once("config.php");
 
     // Data e Hora de inicio do Torneio
-    $inicioTorneio = date("2023-05-03 14:25:00");
+    $inicioTorneio = date("2023-05-03 14:30:00");
     
     // Data e hora atual
     echo $agora = date("Y-m-d H:i:s");
@@ -15,7 +15,7 @@
     $tpAgora = strtotime($agora);
     $tpInicio = strtotime($inicio);
     $tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
-    echo gmdate("H:i:s", $tptempoBlind);
+    echo gmdate("H:i:s", $tempoRestante);
     
 
 
