@@ -48,7 +48,9 @@
             // timestamp formula = (horas*3600) + (minutos*60) + segundos
             $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
             
-            return intdiv($tempoPercorrido, $tpTempo)+1;
+            $nivel = intdiv($tempoPercorrido, $tpTempo);
+
+            return $nivel;
         }
 
     }
