@@ -14,7 +14,7 @@
 
     // Tempo parado
     $pausa = "00:02:00";
-    echo "Tempo Parado".$pausa."<br>";
+    echo "Tempo Parado: ".$pausa."<br>";
 
     // Tempo percorrido
     echo "Tempo de jogo: ".gmdate("H:i:s", $Tempo->tempoDeJogo( $agora , $inicioTorneio, $pausa ))."<br>";
@@ -24,7 +24,7 @@
     echo "Restante Blind: ".gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio ))."<br>";
 
     // nível atual de blinds
-    echo "Nível".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio)."<br>";   
+    echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio)."<br>";   
 
 
 ?>
