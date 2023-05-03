@@ -13,7 +13,7 @@
     echo "Percorrido desde o inicio: ".gmdate("H:i:s", $Tempo->tempoPercorrido( $agora , $inicioTorneio ))."<br>";
 
     // Tempo parado
-    $pausa = "00:02:00";
+    $pausa = "00:30:00";
     echo "Tempo Parado: ".$pausa."<br>";
 
     // Tempo percorrido
