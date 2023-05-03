@@ -14,7 +14,7 @@
     <script>
         setInterval(function (){
             $( "#container" ).load( "painel.php" );
-        }, 1000);
+        }, 999);
     </script>
 
     <!-- ESTILOS -->
