@@ -7,7 +7,7 @@
     
     // Data e hora atual
     $agora = date("Y-m-d H:i:s");
-    echo "Agora: ".$agora."<br>";
+    echo "Agoras: ".$agora."<br>";
 
     // Tempo percorrido
     echo "Percorrido desde o inicio: ".gmdate("H:i:s", $Tempo->tempoPercorrido( $agora , $inicioTorneio ))."<br>";
