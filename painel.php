@@ -14,7 +14,7 @@
     
     // tempo do blind restante
     $tempoBlind = "00:15:00"; 
-    echo $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicio );
+    echo $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio );
 
     //$tempoBlindHoras = 
     //echo $tpTempoBlind = strtotime($tempoBlind);
