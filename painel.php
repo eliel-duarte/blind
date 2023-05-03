@@ -9,13 +9,14 @@
     $agora = date("Y-m-d H:i:s");
     echo "Agora: ".$agora."<br>";
     // Tempo percorrido
-    echo $Tempo->tempoPercorrido( $agora , $inicioTorneio );
+    echo "Percorrido: ".$Tempo->tempoPercorrido( $agora , $inicioTorneio )."<br>";
     
-    $tptempoBlind = 900;
-    $tpAgora = strtotime($agora);
-    $tpInicio = strtotime($inicioTorneio);
-    $tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
-    echo gmdate("H:i:s", $tempoRestante);
+    $tempoBlind = time("0:15:00");
+    echo $tpTempoBlind = strtotime($tempoBlind);
+    //$tpAgora = strtotime($agora);
+    //$tpInicio = strtotime($inicioTorneio);
+    //$tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
+    //echo gmdate("H:i:s", $tempoRestante);
     
 
 
