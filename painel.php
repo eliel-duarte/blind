@@ -1,5 +1,7 @@
 <?php
 
+    require_once("config.php");
+
     // Data e Hora de inicio do Torneio
     $inicioTorneio = date("2023-05-03 15:00:00");
     
