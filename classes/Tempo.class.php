@@ -55,10 +55,10 @@
             return $tempoRestante; 
         }
 
-        function nivelAtual($tempoBlind, $agora, $inicio)
+        function nivelAtual($tempoBlind, $agora, $inicio, $pausa)
         {
             // chama a função que calcula o tempo percorrido do torneio
-            $tempoPercorrido = $this->tempoPercorrido( $agora, $inicio );
+            $tempoPercorrido = $this->tempoDeJogo( $agora, $inicio, $pausa );
 
             // divide o tempo em array
             $tempo = explode(":", $tempoBlind);
