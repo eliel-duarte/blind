@@ -24,11 +24,14 @@
         {
             // divide o tempo em array
             $tempo = explode(":", $tempoBlind);
+
             // timestamp formula = (horas*3600) + (minutos*60) + segundos
             $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
             
+            // chama a função que calcula o tempo percorrido do torneio
             $tempoPercorrido = $this->tempoPercorrido( $agora, $inicio );
 
+            // retira o resto do tempo percorrido
             $tempoRestante = $tpTempo - ($tempoPercorrido % $tpTempo);
 
             return $tempoRestante; 
