@@ -37,6 +37,20 @@
             return $tempoRestante; 
         }
 
+        function nivelAtual($tempoBlind, $agora, $inicio)
+        {
+            // chama a função que calcula o tempo percorrido do torneio
+            $tempoPercorrido = $this->tempoPercorrido( $agora, $inicio );
+
+            // divide o tempo em array
+            $tempo = explode(":", $tempoBlind);
+
+            // timestamp formula = (horas*3600) + (minutos*60) + segundos
+            $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
+            
+            return intdiv($tempoPercorrido, $tpTempo)+1;
+        }
+
     }
 
     // instancia a classe

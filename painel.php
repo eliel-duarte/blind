@@ -16,7 +16,8 @@
     $tempoBlind = "00:15:00"; 
     echo gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio ))."<br>";
 
-    echo intdiv(46, 15);
+    // nível atual de blinds
+    echo nivelAtual($tempoBlind, $agora, $inicioTorneio)."<br>";
 
 
 
