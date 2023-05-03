@@ -29,7 +29,7 @@
             
             $tempoPercorrido = $this->tempoPercorrido( $agora, $inicio );
 
-            $tempoRestante = $tpTempo - $tempoPercorrido;
+            $tempoRestante = $tpTempo - ($tempoPercorrido % $tpTempo);
 
             return $tempoRestante; 
         }
