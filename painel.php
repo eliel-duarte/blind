@@ -15,7 +15,7 @@
     $tptempoBlind = strtotime($tempoBlind);
     $tpInicio = strtotime($inicio);
     $tempoRestante = $tptempoBlind - $tpInicio;
-    gmdate("H:i:s", $tempoRestante);
+    echo gmdate("H:i:s", $tempoRestante);
     
 
 
