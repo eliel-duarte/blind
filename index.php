@@ -30,8 +30,7 @@
 
 </head>
 <body>
-    <div id="container"></div>
-    <?php echo DB_SENHA; ?>
+    <div id="container"></div>    
     
 </body>
 </html>
