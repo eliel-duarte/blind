@@ -10,9 +10,8 @@
     echo "<br>";
     // Tempo percorrido
     echo $Tempo->tempoPercorrido( $agora , $inicioTorneio );
-
-    $tempoBlind = date("15:00");
-    $tptempoBlind = strtotime($tempoBlind);
+    
+    $tptempoBlind = 900;
     $tpAgora = strtotime($agora);
     $tpInicio = strtotime($inicio);
     $tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
