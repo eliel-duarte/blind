@@ -19,6 +19,24 @@
 
         }
 
+        function tempoDeJogo( $agora , $inicio, $pausa )
+        {
+            // divide o tempo em array
+            $pausas = explode(":", $pausa);
+
+            // timestamp formula = (horas*3600) + (minutos*60) + segundos
+            $tpPausa = (($pausas[0]*3600) + ($pausas[1]*60) + $pausas[2]);
+                        
+            // chama a função que calcula o tempo percorrido do torneio
+            $tempoPercorrido = $this->tempoPercorrido( $agora, $inicio );
+
+            // tempo de jogo
+            $tempoDeJogo = $tempoPercorrido - $tpPausa;
+
+            // Retorna no fomato H:m:s
+            return $tempoDeJogo;            
+        }
+
         // funcção que calcula o tempo restante do blind
         function tempoBlindRestante( $tempoBlind, $agora, $inicio )
         {

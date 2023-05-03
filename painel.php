@@ -10,24 +10,21 @@
     echo "Agora: ".$agora."<br>";
 
     // Tempo percorrido
-    echo "Percorrido: ".gmdate("H:i:s", $Tempo->tempoPercorrido( $agora , $inicioTorneio ))."<br>";
+    echo "Percorrido desde o inicio: ".gmdate("H:i:s", $Tempo->tempoPercorrido( $agora , $inicioTorneio ))."<br>";
+
+    // Tempo parado
+    $pausa = "00:02:00";
+    echo "Tempo Parado".$pausa."<br>";
+
+    // Tempo percorrido
+    echo "Tempo de jogo: ".gmdate("H:i:s", $Tempo->tempoDeJogo( $agora , $inicioTorneio, $pausa ))."<br>";
     
     // tempo do blind restante
     $tempoBlind = "00:15:00"; 
-    echo gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio ))."<br>";
+    echo "Restante Blind: ".gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio ))."<br>";
 
     // nível atual de blinds
-    echo $Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio)."<br>";
-
-
-
-    //$tempoBlindHoras = 
-    //echo $tpTempoBlind = strtotime($tempoBlind);
-    //$tpAgora = strtotime($agora);
-    //$tpInicio = strtotime($inicioTorneio);
-    //$tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
-    //echo gmdate("H:i:s", $tempoRestante);
-    
+    echo "Nível".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio)."<br>";   
 
 
 ?>
