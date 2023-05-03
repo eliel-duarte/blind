@@ -13,7 +13,7 @@
     
     $tptempoBlind = 900;
     $tpAgora = strtotime($agora);
-    $tpInicio = strtotime($inicio);
+    $tpInicio = strtotime($inicioTorneio);
     $tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
     echo gmdate("H:i:s", $tempoRestante);
     
