@@ -20,15 +20,18 @@
         }
 
         // funcção que calcula o tempo restante do blind
-        function tempoBlindRestante( $tempoBlind )
+        function tempoBlindRestante( $tempoBlind, $agora, $inicio )
         {
             // divide o tempo em array
             $tempo = explode(":", $tempoBlind);
-
             // timestamp formula = (horas*3600) + (minutos*60) + segundos
             $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
+            
+            $tempoPercorrido = tempoPercorrido( $agora, $inicio );
 
-            return $tpTempo; 
+            $tempoRestante = $tpTempo - $tempoPercorrido;
+
+            return $tempoRestante; 
         }
 
     }

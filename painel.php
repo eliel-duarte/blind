@@ -13,7 +13,8 @@
     echo "Percorrido: ".gmdate("H:i:s", $Tempo->tempoPercorrido( $agora , $inicioTorneio ))."<br>";
     
     // tempo do blind restante
-    echo $Tempo->tempoBlindRestante("00:15:00");
+    $tempoBlind = "00:15:00"; 
+    echo $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicio );
 
     //$tempoBlindHoras = 
     //echo $tpTempoBlind = strtotime($tempoBlind);
