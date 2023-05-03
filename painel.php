@@ -13,8 +13,9 @@
 
     $tempoBlind = date("00:15:00");
     $tptempoBlind = strtotime($tempoBlind);
+    $tpAgora = strtotime($agora);
     $tpInicio = strtotime($inicio);
-    $tempoRestante = $tptempoBlind - $tpInicio;
+    $tempoRestante = $tptempoBlind - ( $tpAgora - $tpInicio);
     echo gmdate("H:i:s", $tempoRestante);
     
 
