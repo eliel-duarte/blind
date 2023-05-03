@@ -27,7 +27,7 @@
             // timestamp formula = (horas*3600) + (minutos*60) + segundos
             $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
             
-            $tempoPercorrido = tempoPercorrido( $agora, $inicio );
+            $tempoPercorrido = $this->tempoPercorrido( $agora, $inicio );
 
             $tempoRestante = $tpTempo - $tempoPercorrido;
 
