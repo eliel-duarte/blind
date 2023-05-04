@@ -27,4 +27,10 @@
     echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio, $pausa)."<br>";   
 
 
+    // teste banco
+    $query = "SELECT * FROM torneio";
+    $sql = $MySQL->query($query);
+    while ($torneio = $sql->fetch_object()){
+        echo $torneio->nome;
+    }
 ?>
