@@ -2,8 +2,14 @@
 
     require_once("config.php");
 
+    // teste banco
+    $query = "SELECT * FROM torneio WHERE id = 1";
+    $sql = $MySQL->query($query);
+    $torneio = $sql->fetch_object();
+    echo $torneio->nome."<br>";
+    
     // Data e Hora de inicio do Torneio
-    $inicioTorneio = date("2023-05-03 15:00:00");
+    $inicioTorneio = $torneio->horarioInicio
     
     // Data e hora atual
     $agora = date("Y-m-d H:i:s");
@@ -27,10 +33,5 @@
     echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio, $pausa)."<br>";   
 
 
-    // teste banco
-    $query = "SELECT * FROM torneio";
-    $sql = $MySQL->query($query);
-    while ($torneio = $sql->fetch_object()){
-        echo $torneio->nome;
-    }
+
 ?>
