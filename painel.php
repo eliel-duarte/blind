@@ -14,7 +14,7 @@
     
     if ($torneio->status == "pausado"){
 
-        adicionaPausa( $torneio->id, $torneio->pausa, $torneio->horarioInicio );    
+        $CLASS_Torneio->adicionaPausa( $torneio->id, $torneio->pausa, $torneio->horarioInicio );    
     }    
     
     // Data e Hora de inicio do Torneio
