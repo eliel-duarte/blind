@@ -19,8 +19,7 @@
     
     
     // Data e hora atual
-    $agora = date("Y-m-d H:i:s");
-    /*
+    $agora = date("Y-m-d H:i:s");    
     echo "Agoras: ".$agora."<br>";
     /*
     // Tempo percorrido
