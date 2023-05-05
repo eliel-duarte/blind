@@ -3,16 +3,20 @@
     require_once("config.php");
 
     // teste banco
-    $query = "SELECT * FROM torneio WHERE id = 1";
-    $sql = $MySQL->query($query);
-    $torneio = $sql->fetch_object();
+    //$query = "SELECT * FROM torneio WHERE id = 1";
+    //$sql = $MySQL->query($query);
+    //$torneio = $sql->fetch_object();
+    $idTorneio = "1";
 
-    var_dump($torneio);
-    $idTorneio = $torneio->id;
+    $torneio = $Torneio->getTorneio($idTorneio);
+
+    var_dump($torneio);    
 
     // Verifica se o torneio está pausado
     
     if ($torneio->status == "pausado"){
+
+
 
         $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
         $tpPausa += 1;
