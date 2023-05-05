@@ -8,7 +8,7 @@
     //$torneio = $sql->fetch_object();
     $idTorneio = "1";
 
-    $torneio = $Torneio->getTorneio($idTorneio);
+    $torneio = $CLASS_Torneio->getTorneio($idTorneio);
 
     var_dump($torneio);    
 
