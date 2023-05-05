@@ -11,12 +11,13 @@
     $idTorneio = $torneio->id;
 
     // Verifica se o torneio está pausado
-    /*
+    
     if ($torneio->status == "pausado"){
 
-        $tpPausa = strtotime($torneio->pausa);
-        $tpPausa += 1;
+        echo $tpPausa = strtotime($torneio->pausa);
+        echo $tpPausa += 1;
 
+        /*
         $novaPausa = gmdate("H:i:s", $tpPausa );
         // cria a query de editar
         $query = "
@@ -33,9 +34,10 @@
         } else {
             echo "Erro: <br /> " . $sql . "<br>" . $My->error . "<br />";//exibe mensagem de erro se houve
 
-        }        
+        } 
+        */      
     }    
-    */
+    
     // Data e Hora de inicio do Torneio
     echo "<br>";
     echo $inicioTorneio = $torneio->horarioInicio;
