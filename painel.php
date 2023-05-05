@@ -22,10 +22,10 @@
         // cria a query de editar
         echo $query = "
             UPDATE torneio SET
-                pausa = $novaPausa
+                pausa = '$novaPausa'
             WHERE torneio.id = $idTorneio;
         ";
-        /*
+        
         // executa e verifica a query
         if ($MySQL->query($query) === TRUE) {
 
@@ -34,8 +34,7 @@
         } else {
             echo "Erro: <br /> " . $sql . "<br>" . $My->error . "<br />";//exibe mensagem de erro se houve
 
-        } 
-        */      
+        }       
     }    
     
     // Data e Hora de inicio do Torneio
