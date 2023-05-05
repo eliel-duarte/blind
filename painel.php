@@ -14,18 +14,18 @@
     
     if ($torneio->status == "pausado"){
 
-        echo $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
-        echo "/".$tpPausa += 1;
+        $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
+        $tpPausa += 1;
 
-        /*
-        $novaPausa = gmdate("H:i:s", $tpPausa );
+        
+        echo $novaPausa = gmdate("H:i:s", $tpPausa );
         // cria a query de editar
-        $query = "
+        echo $query = "
             UPDATE torneio SET
                 pausa = $novaPausa
             WHERE torneio.id = $idTorneio;
         ";
-        
+        /*
         // executa e verifica a query
         if ($MySQL->query($query) === TRUE) {
 
