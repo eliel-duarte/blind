@@ -9,7 +9,7 @@ class Torneio extends MySQLiConnection
     function getTorneio( $id )
     {        
         $query = "SELECT * FROM torneio WHERE id = $id";
-        $sql = $MySQL->query($query);
+        $sql = $this->$MySQL->query($query);
         $torneio = $sql->fetch_object();
 
         return $torneio;
