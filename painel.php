@@ -51,7 +51,7 @@
 
     ?>
 
-    <a href="#" onClick="alert('teste')">Pausa</a>
+    <a href="#" onClick="pausaTorneio()">Pausa</a>
 
 <?php
     

@@ -17,7 +17,8 @@
         }, 1000);
 
         function pausaTorneio(){
-            $( "#console" ).load( "pausaTorneio.php" );
+            //$( "#console" ).load( "pausaTorneio.php" );
+            alert('teste2');
         }
     </script>
 
