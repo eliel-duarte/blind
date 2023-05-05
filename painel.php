@@ -8,6 +8,32 @@
     $torneio = $sql->fetch_object();
 
     var_dump($torneio);
+    $idTorneio = $torneio->id;
+
+    // Verifica se o torneio está pausado
+    if ($torneio->status == "pausado"){
+
+        $tpPausa = strtotime($torneio->pausa);
+        $tpPausa += 1;
+
+        $novaPausa = gmdate("H:i:s", $tpPausa );
+        // cria a query de editar
+        $query = "
+            UPDATE torneio SET
+                pausa = $novaPausa
+            WHERE torneio.id = $idTorneio;
+        ";
+        
+        // executa e verifica a query
+        if ($MySQL->query($query) === TRUE) {
+
+            echo "<br>sucesso";
+
+        } else {
+            echo "Erro: <br /> " . $sql . "<br>" . $My->error . "<br />";//exibe mensagem de erro se houve
+
+        }        
+    }    
     
     // Data e Hora de inicio do Torneio
     echo "<br>";
@@ -37,7 +63,15 @@
     echo "Restante Blind: ".gmdate("H:i:s", $Tempo->tempoBlindRestante( $tempoBlind, $agora, $inicioTorneio, $pausa ))."<br>";
 
     // nível atual de blinds
-    echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio, $pausa)."<br>";   
+    echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio, $pausa)."<br>";
+
+
+
+    ?>
+
+    <a href="#" onClick="">Pausa</a>
+
+<?php
     
     
 /**FIM PAINEL**/
