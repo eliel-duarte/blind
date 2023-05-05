@@ -9,6 +9,9 @@
 
     var_dump($torneio);
 
+    echo "<br>";
+    echo $torneio->nome;
+
     /*
     echo $torneio->nome."<br>";
     
