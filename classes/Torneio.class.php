@@ -2,6 +2,8 @@
 
 class Torneio
 {
+    require_once("classes/Conexao.class.php");
+    
     function getTorneio( $id )
     {
         $query = "SELECT * FROM torneio WHERE id = $id";
