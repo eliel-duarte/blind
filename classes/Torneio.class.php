@@ -1,14 +1,13 @@
 <?php
 
-class Torneio
+class Torneio extends MySQLiConnection
 {
     
     
-    
+    public $MySQL = new MySQLiConnection();
 
     function getTorneio( $id )
-    {
-        require_once("classes/Conexao.class.php");
+    {        
         $query = "SELECT * FROM torneio WHERE id = $id";
         $sql = $MySQL->query($query);
         $torneio = $sql->fetch_object();
