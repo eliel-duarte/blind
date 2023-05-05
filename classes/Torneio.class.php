@@ -1,9 +1,9 @@
 <?php
 
-class Torneio extends MySQLiConnection
+class Torneio
 {
     
-    
+    require_once("classes/Conexao.class.php");
     public $MySQL = new MySQLiConnection();
 
     function getTorneio( $id )
