@@ -2,7 +2,10 @@
 
 class Torneio
 {
-    require_once("Conexao.class.php");    
+    public function __construct()
+    {
+        require_once("Conexao.class.php");    
+    }
 
     function getTorneio( $id )
     {
