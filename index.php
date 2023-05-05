@@ -15,12 +15,18 @@
         setInterval(function (){
             $( "#container" ).load( "painel.php" );
         }, 1000);
+
+        function pausaTorneio(){
+            $( "#console" ).load( "pausaTorneio.php" );
+        }
     </script>
 
     <!-- ESTILOS -->
 
 </head>
 <body>
+    <div id="console"></div>
+    <br />
     <div id="container"></div>    
     
 </body>
