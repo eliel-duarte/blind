@@ -11,6 +11,7 @@
     $idTorneio = $torneio->id;
 
     // Verifica se o torneio está pausado
+    /*
     if ($torneio->status == "pausado"){
 
         $tpPausa = strtotime($torneio->pausa);
@@ -34,7 +35,7 @@
 
         }        
     }    
-    
+    */
     // Data e Hora de inicio do Torneio
     echo "<br>";
     echo $inicioTorneio = $torneio->horarioInicio;
