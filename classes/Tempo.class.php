@@ -60,15 +60,24 @@
             // chama a função que calcula o tempo percorrido do torneio
             $tempoPercorrido = $this->tempoDeJogo( $agora, $inicio, $pausa );
 
-            // divide o tempo em array
-            $tempo = explode(":", $tempoBlind);
-
-            // timestamp formula = (horas*3600) + (minutos*60) + segundos
-            $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
+            // transforma hora em inteiro
+            $tempo = $this->horaEmInteiro( $tempoBlind );
             
+            // pega o inteiro da divisão quociente
             $nivel = intdiv($tempoPercorrido, $tpTempo) + 1;
 
             return $nivel;
+        }
+
+        function horaEmInteiro( $hora )
+        {
+            // divide o tempo em array
+            $tempo = explode(":", $hora);
+
+            // timestamp formula = (horas*3600) + (minutos*60) + segundos
+            $tpTempo = (($tempo[0]*3600) + ($tempo[1]*60) + $tempo[2]);
+
+            return $tpTempo;
         }
 
     }

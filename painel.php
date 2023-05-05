@@ -14,7 +14,7 @@
     
     if ($torneio->status == "pausado"){
 
-        echo $tpPausa = strtotime($torneio->pausa);
+        echo $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
         echo $tpPausa += 1;
 
         /*
