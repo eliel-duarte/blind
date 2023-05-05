@@ -11,8 +11,8 @@
 
     echo "<br>";
     echo $inicioTorneio = $torneio->horarioInicio;
-
-    /*
+    echo "<br>";
+    
     echo $torneio->nome."<br>";
     
     // Data e Hora de inicio do Torneio
@@ -38,7 +38,7 @@
 
     // nível atual de blinds
     echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio, $pausa)."<br>";   
-    */
-
-
+    
+    
+/**FIM PAINEL**/
 ?>
