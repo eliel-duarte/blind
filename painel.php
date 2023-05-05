@@ -1,11 +1,9 @@
 <?php
 
+    // Carrega Configurações
     require_once("config.php");
 
-    // teste banco
-    //$query = "SELECT * FROM torneio WHERE id = 1";
-    //$sql = $MySQL->query($query);
-    //$torneio = $sql->fetch_object();
+    // id do Torneio
     $idTorneio = "1";
 
     $torneio = $CLASS_Torneio->getTorneio($idTorneio);
@@ -16,30 +14,7 @@
     
     if ($torneio->status == "pausado"){
 
-
-
-        $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
-        $tpPausa += 1;
-
-        
-        echo $novaPausa = gmdate("H:i:s", $tpPausa );
-        // cria a query de editar
-        echo $query = "
-            UPDATE torneio SET
-                horarioInicio = '$torneio->horarioInicio',
-                pausa = '$novaPausa'
-            WHERE torneio.id = $idTorneio;
-        ";
-        
-        // executa e verifica a query
-        if ($MySQL->query($query) === TRUE) {
-
-            echo "<br>sucesso";
-
-        } else {
-            echo "Erro: <br /> " . $sql . "<br>" . $My->error . "<br />";//exibe mensagem de erro se houve
-
-        }       
+        adicionaPausa( $torneio->id, $torneio->pausa, $torneio->horarioInicio );    
     }    
     
     // Data e Hora de inicio do Torneio
