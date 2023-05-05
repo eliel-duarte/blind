@@ -61,7 +61,7 @@
             $tempoPercorrido = $this->tempoDeJogo( $agora, $inicio, $pausa );
 
             // transforma hora em inteiro
-            $tempo = $this->horaEmInteiro( $tempoBlind );
+            $tpTempo = $this->horaEmInteiro( $tempoBlind );
             
             // pega o inteiro da divisão quociente
             $nivel = intdiv($tempoPercorrido, $tpTempo) + 1;
