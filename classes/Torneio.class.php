@@ -3,13 +3,15 @@
 class Torneio
 {
     
-    require_once("classes/Conexao.class.php");
-    public $MySQL = new MySQLiConnection();
+
 
     function getTorneio( $id )
-    {        
+    {  
+        require_once("classes/Conexao.class.php");
+        $MySQL = new MySQLiConnection();
+
         $query = "SELECT * FROM torneio WHERE id = $id";
-        $sql = $this->$MySQL->query($query);
+        $sql = $MySQL->query($query);
         $torneio = $sql->fetch_object();
 
         return $torneio;
