@@ -2,12 +2,12 @@
 
 class Torneio
 {
+
+    public require_once("classes/Conexao.class.php");
     
-
-
     function getTorneio( $id )
     {  
-        require_once("classes/Conexao.class.php");
+        
         $MySQL = new MySQLiConnection();
 
         $query = "SELECT * FROM torneio WHERE id = $id";
