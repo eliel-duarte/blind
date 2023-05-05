@@ -8,15 +8,15 @@
     $torneio = $sql->fetch_object();
 
     var_dump($torneio);
-
-    echo "<br>";
-    echo $inicioTorneio = $torneio->horarioInicio;
-    echo "<br>";
-    
-    echo $torneio->nome."<br>";
     
     // Data e Hora de inicio do Torneio
-    echo $inicioTorneio = $torneio->horarioInicio
+    echo "<br>";
+    echo $inicioTorneio = $torneio->horarioInicio;
+    
+    // Nome do Torneio
+    echo "<br>";    
+    echo $torneio->nome."<br>";   
+    
     /*
     // Data e hora atual
     $agora = date("Y-m-d H:i:s");
