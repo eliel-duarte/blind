@@ -14,8 +14,8 @@
     
     if ($torneio->status == "pausado"){
 
-        echo $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
-        echo $tpPausa += 1;
+        //echo $tpPausa = $Tempo->horaEmInteiro( $torneio->pausa );
+        //echo $tpPausa += 1;
 
         /*
         $novaPausa = gmdate("H:i:s", $tpPausa );
