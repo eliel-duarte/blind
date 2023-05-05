@@ -17,7 +17,7 @@
     
     // Data e Hora de inicio do Torneio
     echo $inicioTorneio = $torneio->horarioInicio
-    
+    /*
     // Data e hora atual
     $agora = date("Y-m-d H:i:s");
     echo "Agoras: ".$agora."<br>";
