@@ -1,10 +1,8 @@
 <?php
 
-require_once("Conexao.class.php");    
-
 class Torneio
 {
-    
+    require_once("Conexao.class.php");    
 
     function getTorneio( $id )
     {
