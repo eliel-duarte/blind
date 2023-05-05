@@ -8,7 +8,8 @@
     $torneio = $sql->fetch_object();
 
     var_dump($torneio);
-    
+
+    /*
     echo $torneio->nome."<br>";
     
     // Data e Hora de inicio do Torneio
@@ -34,7 +35,7 @@
 
     // nível atual de blinds
     echo "Nível: ".$Tempo->nivelAtual($tempoBlind, $agora, $inicioTorneio, $pausa)."<br>";   
-
+    */
 
 
 ?>
