@@ -6,6 +6,9 @@
     $query = "SELECT * FROM torneio WHERE id = 1";
     $sql = $MySQL->query($query);
     $torneio = $sql->fetch_object();
+
+    var_dump($torneio);
+    
     echo $torneio->nome."<br>";
     
     // Data e Hora de inicio do Torneio
