@@ -10,7 +10,7 @@
     var_dump($torneio);
 
     echo "<br>";
-    echo $torneio->nome;
+    echo $torneio->horarioInicio;
 
     /*
     echo $torneio->nome."<br>";
