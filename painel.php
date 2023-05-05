@@ -22,6 +22,7 @@
         // cria a query de editar
         echo $query = "
             UPDATE torneio SET
+                horarioInicio = '$torneio->horarioInicio',
                 pausa = '$novaPausa'
             WHERE torneio.id = $idTorneio;
         ";
