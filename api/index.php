@@ -16,9 +16,9 @@
 
 </head>
 <body>
-    
+
     <?php
-        phpinfo();
+        echo "teste";
     ?>   
     
 </body>
