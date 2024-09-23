@@ -79,13 +79,7 @@ function countDown() {
         // Verifica se falta 1 segundos para o próximo nível Toca o som ao mudar o blind
         if (timerMin === 0 && timerSec === 0) {
             mudarBlind.play(); 
-        }
-
-        // Toda vez que zerar os segundos, a cada 1 minuto chama a função atualizar
-        if (timerSec === 0) {
-            atualiza();
-        }
-        
+        }        
 
         updateDisplay(); // Atualiza o visor após cada decremento
     }
@@ -124,7 +118,14 @@ function resetTimer() {
     timerMin = 16; // Define o tempo de rodada para 15 minutos
     if (round > 9){
         timerMin = 14;
-    }    
+    }  
+
+    // Quando o round for par atualiza
+    par = round % 2;
+    if (par === 0){
+        atualiza();
+    }
+    
     timerSec = 0; // Reinicia os segundos
     updateDisplay(); // Atualiza o visor com o tempo ressetado
 }
