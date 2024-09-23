@@ -1,32 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vercel + PHP</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.4/tailwind.min.css" />
+    <title>Teste</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <script src="https://kit.fontawesome.com/cd07afe8fd.js" crossorigin="anonymous"></script>
 </head>
+<body onload="atualiza()">
+    <div id="tudo">
+        <header>
+            <h1>Relógio de Torneio Callzadores</h1>
+        </header>
+        <main>
+            <h2 class="nome_torneio">Etapa #5 - DEEP STACK 25 </h2>
+            <div id="div_meio">
+                <div class="div_informacao">
+                    <div id="entradas">
+                        Entradas <br/>
+                        6 / 6  <br />
+                        <br />         
+                        Premiação Total <br />
+                        R$ 300,00             
+                    </div>
+                </div>
+                <div class="div_tempo">
+                    <p id="tempo">15:00</p>
+                </div>
+                <div class="div_informacao">
+                    <div id="entradas">
+                        Nível <br/>
+                        <div id="nivel">1</div>
+                        <br />         
+                        Registro Tárdio <br />
+                        9       
+                    </div>
+                </div>                
+            </div>
+            <div id="div_meio">
+                <div id="blind">
+                    Blinds<br /><span>150 - 300</span><br />BB Ante <a>300</a>
+                    
+                    <div id="blind2">
+                        Próximo Blinds<br /><span>200 - 400</span><br />BB Ante <a>400</a>
+                    </div>
+                </div>
+                <div id="premiacao">
+                    <div id="rank">
+                        <a class="label_jackpot">Jackpot: <b id="jackpot"></b></a><br />
+                        <br />
+                        <span>Ranking LPP</span><br />
+                        <br />
+                        <table>
+                            <tr>
+                                <td>1º</td>
+                                <td class="nome" id="nome1"></td>
+                                <td id="valor1"></td>
+                            </tr>            
+                            <tr>
+                                <td>2º</td>
+                                <td class="nome" id="nome2"></td>
+                                <td id="valor2"></td>
+                            </tr>
+                            <tr>
+                                <td>3º</td>
+                                <td class="nome" id="nome3"></td>
+                                <td id="valor3"></td>
+                            </tr>
+                            <tr>
+                                <td>4º</td>
+                                <td class="nome" id="nome4"></td>
+                                <td id="valor4"></td>
+                            </tr>
+                            <tr>
+                                <td>5º</td>
+                                <td class="nome" id="nome5"></td>
+                                <td id="valor5"></td>
+                            </tr>
+                            <tr>
+                                <td>6º</td>
+                                <td class="nome" id="nome6"></td>
+                                <td id="valor6"></td>
+                            </tr>
+                            <tr>
+                                <td>7º</td>
+                                <td class="nome" id="nome7"></td>
+                                <td id="valor7"></td>
+                            </tr>           
+                        </table>
 
-<body class="font-mono bg-gray-300 w-screen h-screen flex items-center justify-center">
-    <div>
-        <div class="text-5xl font-bold">
-            Vercel + PHP
-            <a class="inline-block" href="https://vercel.com/new/project?template=https://github.com/vercel-community/php/tree/master">
-                <img src="https://vercel.com/button" alt="Deploy to Vercel" />
-            </a>
-        </div>
+                        
+                        
+                    </div>                    
+                </div>                
+            </div>
+            <div id="div_meio">
+                    <div id="botoes">
+                        <p class="last_blind"> <i class="fa-solid fa-backward-step"></i> </p>
+                        <p class="start_pause"> ▶ </p>                
+                        <p class="reset_time"> <i class="fa-solid fa-rotate-right"></i> </p>
+                        <p class="next_blind"> <i class="fa-solid fa-forward-step"></i> </p>                
+                    </div>
+            </div>
+        </main>
+    </div>        
+        <footer>
+            <p ><b>Recados:</b> Tá chorando pai.</p>
+        </footer>     
 
-        <p class="text-xl my-10">Use the <strong>deploy</strong> button or follow these steps.</p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <script src="js/script.js"></script> 
+        <script src="js/api.js"></script>  
+                
 
-        <ol class="list-decimal my-4 mx-8 text-normal">
-            <li class="py-2">Clone repository <code class="bg-pink-600 rounded rounded-sm text-white p-2">git clone git@github.com:vercel-community/php.git</code></li>
-            <li class="py-2">Switch to <code>/php</code> folder and run <code class="underline font-bold">vercel</code></li>
-            <li class="py-2">Open generated <strong>*.vercel.app</strong> domain [<a class="text-pink-800" href="https://php.vercel.app">demo</a>]</li>
-            <li class="py-2">Discover <strong>*.vercel.app/api/</strong> PHP functions [<a class="text-pink-800" href="https://php.vercel.app/api/">demo</a>] </li>
-        </ol>
-    </div>
 </body>
-
 </html>
